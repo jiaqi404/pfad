@@ -13,7 +13,7 @@ fig = plt.figure()
 ax = plt.axes(
     xlim=(0, 24), 
     ylim=(0, 3), 
-    title="24hrs Tide Height Trend of Januaray", 
+    title="24hrs Tide Height of Januaray", 
     xlabel="time", 
     ylabel="tide height")
 plt.grid(True)
