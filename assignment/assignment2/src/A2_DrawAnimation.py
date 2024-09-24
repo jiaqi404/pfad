@@ -3,17 +3,17 @@ from matplotlib import pyplot as plt
 from matplotlib import animation
 from ObtainData import obtainData
 
-# Run this code to produce an animation
+# Run this code to generate an animation
 
 # Obtain Data
-tideData = obtainData()[:31*24]
+tideData = obtainData()
 
 # Set up the figure and the axis
 fig = plt.figure()
 ax = plt.axes(
     xlim=(0, 24), 
     ylim=(0, 3), 
-    title="24hrs Tide Height of Januaray", 
+    title="24hrs Tide Height in Kwai Chung in 2024", 
     xlabel="time", 
     ylabel="tide height")
 plt.grid(True)
@@ -32,6 +32,6 @@ def animate(frame):
     return line,
 
 # Call the animator
-anim = animation.FuncAnimation(fig, animate, frames=300, init_func=init, interval=50, blit=True)
+anim = animation.FuncAnimation(fig, animate, init_func=init, interval=50, blit=True)
 
 plt.show()

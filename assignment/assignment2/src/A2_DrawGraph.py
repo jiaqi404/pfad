@@ -2,7 +2,7 @@ from ObtainData import obtainData
 from DrawPlots import drawPlots
 import numpy as np
 
-# Run this code to produce a static diagram
+# Run this code to generate a static diagram
 
 # Obtain Data
 tideData = obtainData()[:31*24]
