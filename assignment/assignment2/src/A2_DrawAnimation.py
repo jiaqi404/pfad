@@ -11,13 +11,13 @@ tideData = obtainData()
 # Set up the figure and the axis
 fig = plt.figure()
 ax = plt.axes(
-    xlim=(0, 24), 
+    xlim=(0, 23), 
     ylim=(0, 3), 
     title="24hrs Tide Height in Kwai Chung in 2024", 
     xlabel="time", 
     ylabel="tide height")
 plt.grid(True)
-line, = ax.plot([], [])
+line, = ax.plot([], [], marker=".")
 
 # Set initialization function
 def init():

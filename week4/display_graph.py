@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # load csv and display graph
-df = pd.read_csv("tides.csv")
+df = pd.read_csv("week4/tides.csv")
 df["Date"] = pd.to_datetime(df["Date"])
 df.set_index("Date", inplace=True)
 
