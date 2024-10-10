@@ -1,1 +1,2 @@
 # About Assignment \#3
+In this assignment, I used Streamlit to establish a webpage that can get user's text input, and then used a text to audio model to generate an audio clip based on the text description. **Please run A3_TextToAudio.py to check.**
